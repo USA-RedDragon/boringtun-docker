@@ -1,7 +1,3 @@
-# For production, likely to be
-# ARG RUNNER_IMAGE="gcr.io/distroless/cc"
-ARG RUNNER_IMAGE="rust:1.45-slim"
-
 FROM rust:1.45 as builder
 
 RUN cargo install boringtun
